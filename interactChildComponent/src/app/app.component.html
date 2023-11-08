@@ -1,0 +1,6 @@
+<div *ngIf="countingNumber">
+  <h1>Congratulations!</h1>
+  <h3>You stopped the child component's counter!</h3>
+</div>
+
+<app-child (testingChild)="testingParent($event)"></app-child>
