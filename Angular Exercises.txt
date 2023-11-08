@@ -1,0 +1,40 @@
+﻿Angular Exercises
+1. Assignment one
+2. Assignment two
+3. First application
+4. Data bound component
+5. Input decorator
+6. Interact child component
+7. Style
+8. Output decorator
+9. Safe navigation operator
+10. Repeating data
+11. Hidden elements
+12. Hidden binding
+13. Hide show elements
+14. Ng Class
+15. Ng Style
+16. services
+17. Routing
+18. Routing parameter
+19. Two routing parameter
+20. Link routing
+21. Code Routing
+22. Navigation routing
+23. Guard routing activate
+24. Template form
+25. Template form validation 
+26. Reactive form 
+27. Form validation
+28. Reactive form validation
+29. Api
+30. Routing data pass parameter
+31. Recipe project
+32. Angular material ui
+33. Table data
+34. Table data material ui
+35. Crud testing
+36. Crud-app testing
+37. Crud app
+38. My new app
+39. Angular Component
