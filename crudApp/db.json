@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Vishnu",
+      "lastName": "VArathan",
+      "email": "d@gmail.com",
+      "dob": "2023-06-10T18:30:00.000Z",
+      "gender": "male",
+      "education": "Matriculation",
+      "companyName": "fasdf",
+      "experience": 3,
+      "package": 123445,
+      "id": 1
+    },
+    {
+      "firstName": "balajli",
+      "lastName": " jaldjl",
+      "email": "2@gmail.com",
+      "dob": "2023-06-05T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "companyName": "rqe",
+      "experience": 34,
+      "package": 34,
+      "id": 3
+    },
+    {
+      "firstName": "darshafkladsjklkl",
+      "lastName": "rkwj",
+      "email": "12@gmail.com",
+      "dob": "2023-06-12T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "companyName": "41",
+      "experience": 14121,
+      "package": 34,
+      "id": 4
+    }
+  ]
+}
