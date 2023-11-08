@@ -1,0 +1,26 @@
+
+<div>
+  <h1 class="ms-4">{{ eventService.mainHeading}}</h1>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>{{eventService.event }}</th>
+          <th>{{eventService.date }}</th>
+          <th>{{eventService.time }}</th>
+          <th>{{eventService.address }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of events">
+          <td>
+            <a [routerLink]="['events', event.id]">{{event.name}}</a>
+          </td>
+          <td>{{event.date }}</td>
+          <td>{{event.time }}</td>
+          <td>{{event.location.address }},{{event.location.city }},{{event.location.country }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+
+<div>
+  <h1>{{eventService.detailsHeading}}</h1>
+  <div>
+    <p>{{ events.name}}</p>
+    <p>{{ events.date}}</p>
+    <p>{{ events.time}}</p>
+    <p>{{ events.location.address}},{{ events.location.city}},{{ events.location.country}}</p>
+  </div>
+  <button class="btn btn-success" (click)="backToEvents()" >Back to events</button>
+</div>
