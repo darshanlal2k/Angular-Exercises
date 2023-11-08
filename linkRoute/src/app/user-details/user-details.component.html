@@ -1,0 +1,10 @@
+<div>
+  <h1 class="ms-3">{{eventService.headingDetails}}</h1>
+  <div>
+    <p>{{ eventDetails.name}}</p>
+    <p>{{ eventDetails.date}}</p>
+    <p>{{ eventDetails.time}}</p>
+    <p>{{ eventDetails.location.address}},{{ eventDetails.location.city}},{{ eventDetails.location.country}}</p>
+  </div>
+  <a class="ms-3" [routerLink]="['']">Back to the events</a>
+</div>
