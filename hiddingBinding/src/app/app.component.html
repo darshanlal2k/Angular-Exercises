@@ -1,0 +1,14 @@
+<div *ngFor="let event of events" class="p-3 bg-secondary m-3 text-white">
+  <div>{{ event.name}}</div>
+  <span [hidden]="event.hidden">
+    <button class="btn btn-warning" (click)="event.hidden=true">collapse</button>
+  </span>
+  <span [hidden]="!event.hidden">
+    <button [hidden]="!event.hidden" class="btn btn-warning" (click)="event.hidden=false">Expand</button>
+  </span>
+  <div [hidden]="event.hidden">
+    <div>Date: {{ event.date }}</div>
+    <div>Time: {{ event.time }}</div>
+    <div>Location: {{ event.location.address }}{{event.location.city}},{{ event.location.country}}</div>
+  </div>
+</div>
