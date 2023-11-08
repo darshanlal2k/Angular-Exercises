@@ -1,0 +1,13 @@
+<h1>{{ title | lowercase | slice : 8:10}}</h1>
+
+<h4>{{ amount | currency : 'EUR'}}</h4>
+
+<h4>{{ amount | number : '1.1-2'}}</h4>
+
+<h2>{{ currentDate | date : 'dd/MM/yy'}}</h2>
+
+<h2>{{percentage | percent}}</h2>
+
+<h2>{{ jsonObj | json | uppercase}}</h2>
+
+<h2>{{ amount | sgdtoinr : sgdtoinrRate }}</h2>

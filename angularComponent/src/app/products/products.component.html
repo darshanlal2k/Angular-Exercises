@@ -1,0 +1,46 @@
+<!-- <div *ngFor="let item of [1,3,4,17,20]">
+    <p>Number is : {{ item }}</p>
+</div> -->
+
+
+<h2>Child Component</h2>
+<ng-content></ng-content>
+
+
+<h1>Parent Component</h1>
+
+
+<app-child [message]="message"></app-child>
+
+
+
+<div *ngFor="let p of products ; let i = index">
+    <!-- <p>{{ i }}</p> -->
+    <div class="productContainer" [ngStyle]="{backgroundColor:p.available === 'available' ? '#D5F5E3' : '#FADBD8'}">
+        <div class="imageContainer">
+            <img [src]="p.image" alt="" style="max-width: 50px; max-height: 50px;">
+        </div>
+        <div>
+            <div class="nameContainer">
+                <h6>{{p.name}}</h6>
+            </div>
+            <div class="detailContainer">
+                <div class="details" [ngStyle]="{color: p.available === 'available' ? 'Green' : 'Red'}">{{p.available}}</div>
+                <div class="details">
+                    <b>Price :</b>{{p.price}}
+                </div>
+                <div class="details">
+                    <b>Color :</b> {{p.color}}
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <button class="btn btn-success">Show details</button>
+            <button class="btn btn-warning" *ngIf="p.available === 'available'; else notifyMe">Buy Now</button>
+            <ng-template #notifyMe>
+                <button class="btn btn-danger">Notify Me</button>
+            </ng-template>
+            
+        </div>
+    </div>
+</div>
