@@ -1,0 +1,6 @@
+<div *ngIf="counterNumber">
+  <h1>Congratulations!</h1>
+  <h3>You set the parent's counter to: {{ counterNumber || 'not generated parent'}}</h3>
+</div>
+
+<app-child (numberGenerated1)="counterGenerated($event)"></app-child>
