@@ -1,0 +1,13 @@
+<div class="text-center">
+  <span class="inPerson m-2">In Person</span>
+  <span class="online m-2">Online</span>
+  <span class="m-2 tbd">TBD</span>
+</div>
+<div *ngFor="let event of events" class="bg-secondary p-3 m-3">
+  <h1 [ngClass]="titleColor(event.format)">{{event.name}}</h1>
+  <p>Date: {{event.date}}</p>
+  <p>Time: {{event.time}}</p>
+  <p *ngIf="event.location">Location: {{event?.location?.address}}{{event?.location?.city}},
+    {{event?.location?.country}}</p>
+  <p *ngIf="event.onlineUrl">Online URL: {{event?.onlineUrl}}</p>
+</div>
