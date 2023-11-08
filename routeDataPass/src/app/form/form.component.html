@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="col-4 mx-auto">
+    <form #userform="ngForm" (ngSubmit)="userDetails(userform.value)" >
+      <div class="form-group ">
+        <label for="name">Event Name : </label>
+        <input id="name" class="form-control" type="text" name="name" ngModel required>
+      </div>
+      <div class="form-group mt-3">
+        <label for="date">Date : </label>
+        <input id="date" class="form-control" type="text" name="date" ngModel required>
+      </div>
+      <div class="form-group mt-3">
+        <label for="time">Time :</label>
+        <input id="time" class="form-control" type="text" name="time" ngModel required>
+      </div>
+      <div ngModelGroup="location">
+        <div class="form-group mt-3">
+          <label for="address">Address</label>
+          <input id="address" class="form-control" type="text" name="address" ngModel required>
+        </div>
+        <div class="form-group mt-3">
+          <label for="city">City</label>
+          <input id="city" class="form-control" type="text" name="city" ngModel required>
+        </div>
+        <div class="form-group mt-3">
+          <label for="country">Country</label>
+          <input id="country" class="form-control" type="text" name="country" ngModel required>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-6 text-center">
+          <button class="btn btn-success" type="submit" [disabled]="userform.invalid">Save</button>
+        </div>
+        <div class="col-6 text-center">
+          <button class="btn btn-danger" type="button" (click)="cancel()">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

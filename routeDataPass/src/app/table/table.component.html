@@ -1,0 +1,27 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>{{event}}</th>
+        <th>{{date}}</th>
+        <th>{{time}}</th>
+        <th>{{address}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <td>{{event.name}}</td>
+        <td>{{event.date}}</td>
+        <td>{{event.time}}</td>
+        <td>{{event.location.address}}, {{event.location.city}}, {{event.location.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <a class="ms-3" [routerLink]="['/createEvent']">Create New Event</a>
+  </div>
+  <p>String Formation </p>
+  <p>{{getData}}</p>
+  <p>Object Formation </p>
+  <p> {{objtValue}}</p>
+</div>
