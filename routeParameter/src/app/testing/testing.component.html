@@ -1,0 +1,28 @@
+<!-- <p>testing works!</p> -->
+<!-- <h1>{{ eventService.age}}</h1> -->
+
+<!-- <h1 *ngFor="let sample of samples">{{ sample.name}}</h1> -->
+
+<div>
+  <table>
+    <thead >
+      <tr>
+        <td>{{ eventService.event}}</td>
+        <td>{{ eventService.date}}</td>
+        <td>{{ eventService.time}}</td>
+        <td>{{ eventService.address}}</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <td>
+          <a [routerLink]="['events', event.id]">{{ event.name}}</a>
+         </td>
+        <td>{{ event.date}}</td>
+        <td>{{ event.time}}</td>
+        <td>{{ event.location.address}},{{ event.location.city}},{{ event.location.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- <router-outlet></router-outlet> -->
