@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Rajesh",
+      "lastName": "Waran",
+      "email": "asdf@gmail.com",
+      "dob": "2023-07-02T18:30:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "companyName": "Google",
+      "experience": 1,
+      "package": 150,
+      "id": 2
+    },
+    {
+      "firstName": "Elon",
+      "lastName": "musk",
+      "email": "asdf@gmail.com",
+      "dob": "2017-07-02T18:30:00.000Z",
+      "gender": "male",
+      "education": "Post Graduate",
+      "companyName": "spacex",
+      "experience": 1,
+      "package": 35,
+      "id": 3
+    }
+  ]
+}
