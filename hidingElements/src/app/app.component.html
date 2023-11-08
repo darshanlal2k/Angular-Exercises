@@ -1,0 +1,10 @@
+<div *ngFor="let event of events" >
+  <div class="spacing  bg-secondary m-4 p-2">
+    <h1>{{ event.name }}</h1>
+    <button *ngIf="event.onlineUrl && !event.location" class="btn btn-warning">Online Only</button>
+    <p>Date: {{ event.date }}</p>
+    <p>Time: {{ event.time }}</p>
+    <p *ngIf="event.location">Location: {{ event.location.address}}{{ event.location.city}},{{ event.location.country}}</p>
+    <p *ngIf="event.onlineUrl">onlineUrl : {{event.onlineUrl }}</p>
+  </div>
+</div>
