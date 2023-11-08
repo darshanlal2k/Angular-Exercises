@@ -1,0 +1,13 @@
+<div *ngFor="let event of events" class="bg-secondary p-2 m-4 text-white">
+  <h1>{{ event.name}}</h1>
+  <span [ngSwitch]="event.format" >
+    <button class="btn btn-warning mt-2 mb-2" *ngSwitchCase="'InPerson'">InPerson</button>
+    <button class="btn btn-warning mt-2 mb-2" *ngSwitchCase="'Online'">Online</button>
+    <button class="btn btn-warning mt-2 mb-2" *ngSwitchDefault>TBD</button>
+  </span>
+  <p>Date: {{ event.date}}</p>
+  <p>Time: {{ event.time}}</p>
+  <p *ngIf="event.location">Location: {{ event?.location?.address}}
+    {{event?.location?.city}}{{event?.location?.country}}</p>
+  <p *ngIf="event.onlineUrl">Online : {{event.onlineUrl}}</p>
+</div>
