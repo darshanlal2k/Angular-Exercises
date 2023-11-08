@@ -1,0 +1,23 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>{{eventService.event}}</th>
+        <th>{{eventService.date}}</th>
+        <th>{{eventService.time}}</th>
+        <th>{{eventService.address}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <td>{{event.name}}</td>
+        <td>{{event.date}}</td>
+        <td>{{event.time}}</td>
+        <td>{{event.location.address}},{{event.location.city}},{{event.location.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <a class="ms-4" [routerLink]="['/new']">Create New Event</a>
+  </div>
+</div>
